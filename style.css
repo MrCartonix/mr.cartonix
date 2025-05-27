@@ -28,6 +28,7 @@ h1 {
   width: 220px;
   border-radius: 20px;
   margin-top: 1rem;
+  box-shadow: 0 0 15px #38f8d2;
 }
 
 button {
