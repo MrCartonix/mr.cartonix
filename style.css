@@ -48,13 +48,6 @@ button:hover {
   transform: scale(1.07);
 }
 
-#walletAddress, #walletBalance {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  color: #ffe369;
-  text-shadow: 1px 1px 2px #000;
-}
-
 main {
   padding: 2rem;
   max-width: 850px;
@@ -92,7 +85,7 @@ img {
 footer {
   text-align: center;
   padding: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 1);
   font-size: 0.95rem;
   border-top: 2px solid #facc15;
 }
@@ -115,23 +108,4 @@ header::before {
   background-size: contain;
   height: 120px;
   margin: auto;
-}
-
-/* Custom Phantom Connect Button */
-#connectButton {
-  background-color: #8b5cf6;
-  color: white;
-  font-size: 1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.75rem 1.2rem;
-  border-radius: 14px;
-  border: 2px solid #c4b5fd;
-  box-shadow: 0 0 12px rgba(139, 92, 246, 0.6);
-}
-
-#connectButton img {
-  width: 24px;
-  height: 24px;
 }
