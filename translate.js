@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    title: "Mr.Cartonix сoin (CARTONIX)",
+    title: "Mr.Cartonix Coin (CARTONIX)",
     title2: "The cardboard hero's crypto adventure. Join the revolution!",
     title3: "What is CARTONIX?",
     title4: "Mr.Cartonix is not just a meme. It's a crypto movement! He started with a box factory, and now he has his own token, CARTONIX.",
