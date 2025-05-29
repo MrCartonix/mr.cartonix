@@ -31,6 +31,13 @@ h1 {
   /*box-shadow: 0 0 15px #000000;*/
 }
 
+#languageSwitcher {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
 button {
   background-color: #facc15;
   border: none;
@@ -46,13 +53,6 @@ button {
 button:hover {
   background-color: #ffe369;
   transform: scale(1.07);
-}
-
-#languageSwitcher {
-  padding: 5px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  background: white;
 }
 
 main {
