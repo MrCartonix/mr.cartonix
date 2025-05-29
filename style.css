@@ -48,6 +48,13 @@ button:hover {
   transform: scale(1.07);
 }
 
+#languageSwitcher {
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+}
+
 main {
   padding: 2rem;
   max-width: 850px;
