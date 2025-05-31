@@ -16,7 +16,50 @@ const translations = {
     title14: "Team and development: 30% (300 mln 250 million are blocked for 12 months)",
     title15: "NFT Collection SOON",
     title16: "Roadmap",
-    title17: "Creation and launch of the CARTONIX token",
+    title17: ""🗺️ Mr.Cartonix Roadmap"
+
+              "📦 PHASE 1 — “Box Assembly”"
+              
+              "✅ Creation of $CARTONIX meme token on Solana blockchain"
+              "✅ Design of Mr.Cartonix character"
+              "✅ Launch of Twitter page: @mrcartonix"
+              "✅ Posting memes and engaging content"
+              "✅ Telegram community launch"
+              "🔜 Listing on Moonit (community-backed launch via 100 SOL)"
+              
+              "🚀 PHASE 2 — “Launch Into Crypto Space”"
+              
+              "🔲 Listing on Dex platforms (Meteora, Raydium)"
+              "🔲 Airdrop for early subscribers"
+              "🔲 Development of the Mr.Cartonix Boxes NFT collection"
+              "🔲 Collaborations with other Solana meme projects"
+              "🔲 Viral videos & challenges on TikTok / X"
+              
+              "🎨 PHASE 3 — “Box Opening Begins”"
+              
+              "🔲 Launch of Cartonix Box Opener mini-game (web + Telegram bot)"
+              "🔲 NFT Utility: Use NFTs for game access and bonuses"
+              "🔲 Marketplace for trading boxes and rewards"
+              "🔲 Website visual upgrade with Mr.Cartonix animations"
+              "🔲 Integration of NFTs into inventory and game mechanics"
+              
+              "🧠 PHASE 4 — “Box of the Future”
+              
+              "🔲 Tokenomics upgrade for $CARTONIX"
+              "🔲 Launch of community DAO"
+              "🔲 Staking for NFTs and tokens"
+              "🔲 Mr.Cartonix 3D NFT collection for the metaverse"
+              "🔲 Mobile app: “Open the Box”
+              
+              "🌐 PHASE 5 — “Box Conquers the World”
+              
+              "🔲 Cross-chain bridges (Ethereum / BSC)"
+              "🔲 CEX Listings (Gate, MEXC, OKX and more)"
+              "🔲 Collaborations with brands and influencers"
+              "🔲 International AMAs and IRL events"
+              "🔲 Launch of Season 2 NFTs and Box Wars"
+              
+              "🧃 Mr.Cartonix isn’t just a token — it’s a movement, a game, and a laugh in a box.",
     title18: "Launching memes and videos on social media",
     title19: "Listing on DEX",
     title20: "Creating an NFT collection",
