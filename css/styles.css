@@ -1,0 +1,621 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #e7c689;
+    scroll-behavior: smooth;
+    background: #f7edd8;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #e7c689;
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+    color: #372813;
+    background: none;
+}
+
+.hero, .partners, .livechart, .buy, .socials .news .roadmap .docs .team .collection{
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 700px; /* или своя высота */
+  width: 100%;
+}
+section {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+body, html {
+  background: #e7c689;
+}
+
+
+header {
+    background: #ffe7b3;
+    box-shadow: 0 2px 14px rgba(90, 57, 12, 0.08);
+    padding: 0 0 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 0px;
+    min-height: 64px;
+}
+
+.logo {
+    height: 48px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #231a0a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: #e1a457;
+}
+
+.cta-btn {
+    background: #c99b5b;
+    color: #fff8e1;
+    border-radius: 14px;
+    padding: 9px 22px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 7px #c7a07c3c;
+    transition: background 0.16s, box-shadow 0.16s;
+    margin-left: 14px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+}
+.cta-btn.big {
+    font-size: 1.25rem;
+    padding: 16px 40px;
+}
+
+.cta-btn:hover {
+    background: #f3b254;
+    color: #7a410c;
+}
+
+/* === HERO BLOCK === */
+.hero {
+    background: url('/img/bg-main.jpg') center center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 1.2s cubic-bezier(.7,0,.3,1), transform 1.2s cubic-bezier(.7,0,.3,1);
+}
+.hero-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-title {
+    font-family: 'Luckiest Guy', Arial, cursive;
+    font-size: 2.8rem;
+    color: #fff8e1;
+    letter-spacing: 2.5px;
+    text-shadow: 0 3px 16px #9c7048, 0 2px 2px #9c7048, 0 0 4px #3d2b13;
+    margin-bottom: 24px;
+    opacity: 1;
+}
+
+.hero-title span {
+    opacity: 0;
+    display: inline-block;
+    transition: opacity 0.10s;
+}
+
+.hero-title.animated span {
+    opacity: 1;
+}
+
+.hero-subtitle {
+    font-family: 'Luckiest Guy', Arial, sans-serif;
+    color: #f4e2be;
+    font-size: 1.1rem;
+    text-shadow: 0 1px 6px #7d5737;
+    margin-bottom: 32px;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+@media (max-width: 900px) {
+    .hero {
+        min-height: 400px;
+    }
+}
+@media (max-width: 600px) {
+    .hero {
+        min-height: 220px;
+    }
+}
+
+/* PARTNERS BLOCK */
+.partners {
+    background: url('/img/partners-bg.jpg') center center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-radius: px;
+    box-shadow: 0 4px 32px #44270209;
+    overflow: hidden;
+    
+}
+.partners-content {
+    max-width: 950px;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.1s cubic-bezier(.7,0,.3,1), transform 1.1s cubic-bezier(.7,0,.3,1);
+}
+.partners-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.partners-title {
+    font-family: 'Luckiest Guy', Arial, cursive;
+    color: #fff8e1;
+    font-size: 2.6rem;
+    text-shadow: 0 2px 8px #a07e45, 0 0 3px #7a5c2b;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+.partners-subtitle {
+    font-family: 'Luckiest Guy', Arial, cursive;
+    color: #ffedbc;
+    font-size: 1.1rem;
+    text-shadow: 0 1px 6px #7d5737;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 44px;
+    margin-top: 16px;
+}
+.partners-logos img {
+    height: 200px;
+    border-radius: 30px;
+    transition: transform 0.16s, box-shadow 0.16s;
+}
+.partners-logos img:hover {
+    transform: scale(1.08) rotate(-2deg);
+}
+
+footer {
+    background: #ffe7b3;
+    text-align: center;
+    padding: 32px 0;
+    font-size: 1.1rem;
+    color: #7d5737;
+    border-radius: 0 0 16px 16px;
+    margin-top: 32px;
+}
+
+/* Для мобильных */
+@media (max-width: 900px) {
+    .partners { min-height: 320px; padding: 38px 0; }
+    .partners-title { font-size: 1.5rem; }
+    .partners-logos img { height: 40px; padding: 7px 16px; }
+    .partners-logos { gap: 16px; }
+}
+@media (max-width: 600px) {
+    .partners { padding: 16px 0 20px 0; border-radius: 16px; }
+    .partners-logos { flex-direction: column; gap: 14px; }
+    .partners-logos img { height: 32px; }
+}
+
+* { box-sizing: border-box; }
+body { background: #e7c689; } /* цвет-подложка в тон бэкграунда */
+
+.livechart {
+    background: url('/img/chart-bg.jpg') center center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 32px #44270209;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+}
+.livechart-content {
+    max-width: 950px;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.1s cubic-bezier(.7,0,.3,1), transform 1.1s cubic-bezier(.7,0,.3,1);
+}
+.livechart-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.livechart-title {
+    font-family: 'Luckiest Guy', Arial, cursive;
+    color: #fff8e1;
+    font-size: 2.3rem;
+    text-shadow: 0 2px 8px #a07e45, 0 0 3px #7a5c2b;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+.livechart-subtitle {
+    font-family: 'Luckiest Guy', Arial, cursive;
+    color: #ffedbc;
+    font-size: 1.08rem;
+    text-shadow: 0 1px 6px #7d5737;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+.chart-widget {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff8e1cc;
+    border-radius: 22px;
+    box-shadow: 0 2px 12px #8b683a22;
+    padding: 8px 6px 2px 6px;
+}
+.chart-widget iframe {
+    width: 100%;
+    border-radius: 22px;
+}
+@media (max-width: 900px) {
+    .livechart { min-height: 320px; padding: 38px 0; }
+    .livechart-title { font-size: 1.3rem; }
+    .chart-widget { max-width: 98vw; }
+}
+@media (max-width: 600px) {
+    .livechart { padding: 16px 0 20px 0; border-radius: 16px; }
+    .chart-widget { padding: 3px; }
+}
+
+.buy {
+    background: url('/img/buy-bg.jpg') center center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    box-shadow: 0 4px 32px #44270209;
+    overflow: hidden;
+    padding: 0;
+}
+.buy-content {
+    max-width: 850px;
+    margin: 0 auto;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.1s cubic-bezier(.7,0,.3,1), transform 1.1s cubic-bezier(.7,0,.3,1);
+}
+.buy-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.buy-title {
+    font-family: 'Luckiest Guy', Arial, cursive;
+    color: #fff8e1;
+    font-size: 2.2rem;
+    text-shadow: 0 2px 8px #a07e45, 0 0 3px #7a5c2b;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+.buy-subtitle {
+    font-family: 'Luckiest Guy', Arial, cursive;
+    color: #ffedbc;
+    font-size: 1.07rem;
+    text-shadow: 0 1px 6px #7d5737;
+    margin-bottom: 36px;
+    letter-spacing: 1px;
+}
+.buy-steps {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    padding-left: 1.4em;
+    font-family: 'Luckiest Guy', Arial, cursive;
+    color: #372813;
+    font-size: 1.08rem;
+    background: #fff8e1cc;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px #e5b36728;
+    padding: 16px 26px 12px 34px;
+    list-style-position: inside;
+}
+.buy-steps li {
+    margin-bottom: 9px;
+}
+.buy-steps code {
+    background: #f3d997;
+    border-radius: 6px;
+    padding: 1px 6px;
+    font-size: 0.97em;
+    color: #845800;
+}
+.cta-btn.big {
+    font-size: 1.25rem;
+    padding: 16px 40px;
+    margin-top: 22px;
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+    .buy { min-height: 320px; padding: 38px 0; }
+    .buy-title { font-size: 1.3rem; }
+    .buy-steps { font-size: 1em; padding: 12px 10px 9px 18px; }
+}
+@media (max-width: 600px) {
+    .buy { padding: 16px 0 20px 0; border-radius: 16px; }
+    .buy-content { padding: 0 5px; }
+    .buy-steps { padding: 8px 5px 6px 12px; }
+}
+
+/* По буквам */
+.hero-title span, .partners-title span, .livechart-title span, .buy-title span {
+    opacity: 0;
+    display: inline-block;
+    transition: opacity 0.10s;
+}
+.hero-title.animated span,
+.partners-title.animated span,
+.livechart-title.animated span,
+.buy-title.animated span {
+    opacity: 1;
+}
+
+/* Для fade/slide появлений */
+.hero-content, .hero-subtitle,
+.partners-content,
+.livechart-content,
+.buy-content {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.1s cubic-bezier(.7,0,.3,1), transform 1.1s cubic-bezier(.7,0,.3,1);
+}
+.hero-content.active, .hero-subtitle.active,
+.partners-content.active,
+.livechart-content.active,
+.buy-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero, .partners, .livechart, .buy {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%; /* или contain — смотри ниже */
+    min-height: 700px; /* выставляй по дизайну! */
+    width: 100%;
+    /* остальное оформление */
+}
+
+.socials {
+    min-height: 100vh;
+    background: url('/img/social-bg.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    border: none;
+    position: relative;
+}
+
+.socials-title {
+    font-family: 'Luckiest Guy', Arial, cursive;
+    color: #fff8e1;
+    font-size: 2.4rem;
+    margin-top: 200px;       /* делаем отступ сверху */
+    margin-bottom: 114px;    /* ближе к кнопкам */
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.socials-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+.social-btn img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 22px;
+    transition: box-shadow 0.18s, transform 0.18s;
+}
+.social-btn span {
+    margin-top: 2px;
+    font-size: 1.13rem;
+    font-family: 'Luckiest Guy', Arial, cursive;
+    color: #fff8e1;
+    letter-spacing: 1.2px;
+}
+.social-btn:hover img {
+    transform: translateY(-8px) scale(1.07) rotate(-3deg);
+    
+}
+.social-btn:hover span {
+    color: #fff5b2;
+    text-shadow: 0 1px 12px #7b6b36bb;
+}
+.socials-content {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1.1s cubic-bezier(.7,0,.3,1), transform 1.1s cubic-bezier(.7,0,.3,1);
+}
+.socials-content.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Адаптив для мобилок */
+@media (max-width: 900px) {
+    .socials-buttons { gap: 18px; }
+    .social-btn img { width: 90px; }
+    .socials-title { font-size: 1.1rem; }
+}
+
+/* Только убираем белые полосы и скругления у секций! */
+.hero, .partners, .livechart, .buy, .socials {
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* На мобильных убираем только скругления у секций */
+@media (max-width: 900px) {
+  .hero, .partners, .livechart, .buy, .socials {
+    border-radius: 0;
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .hero, .partners, .livechart, .buy, .socials {
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+/* Тело сайта делаем фон-тон секций, чтобы если что не выбивалось */
+body, html {
+  background: #e7c689;
+}
+
+.news{
+    background: url('/img/bg-news.jpg') center center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+
+.roadmap{
+    background: url('/img/bg-roadmap.jpg') center center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+.docs{
+    background: url('/img/bg-docs.jpg') center center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+.collection{
+    background: url('/img/bg-collection.jpg') center center / cover no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
